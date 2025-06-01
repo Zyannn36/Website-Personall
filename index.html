@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Coding - Website Layout</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script>
+        function showTutorial(content) {
+            var contentDiv = document.getElementById("content");
+            contentDiv.innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Latihan Coding</h1>
+            <p>Belajar membuat layout website sederhana</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="index37.html">HTML</a></li>
+                <li><a href="index38.html">CSS</a></li>
+                <li><a href="index39.html">PHP</a></li>
+                <li><a href="index40.html">Javascript</a></li>
+				<li><a href="mahasiswazaki.php">mahasiswa</a></li>
+				<li><a href="loginzaki.php">LOGOUT</a></li>
+            </ul>
+        </div>
+        <div class="badan">
+            <div class="sidebar">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="showTutorial('Tutorial HTML dasar: <h4>HTML adalah bahasa markup untuk membuat struktur halaman web.</h4> <p>HTML (HyperText Markup Language) adalah bahasa yang digunakan untuk membuat halaman web. Dengan HTML, kita dapat menentukan elemen-elemen seperti teks, gambar, dan link di dalam halaman web.</p> <p>HTML adalah dasar dari pengembangan web, dan mempelajarinya adalah langkah pertama bagi siapa saja yang ingin membuat situs web mereka sendiri.</p>')">Tutorial HTML dasar</a></li>
+                    <li><a href="javascript:void(0);" onclick="showTutorial('Tutorial CSS dasar: <h4>CSS digunakan untuk mengatur tampilan dan layout halaman web.</h4> <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain dan menyusun layout halaman web. Dengan CSS, kita dapat mengontrol elemen seperti warna, font, margin, padding, dan tata letak elemen-elemen di halaman.</p> <p>CSS memberikan fleksibilitas dalam membuat halaman web yang responsif dan dapat menyesuaikan diri dengan berbagai ukuran layar, mulai dari komputer desktop hingga perangkat mobile.</p>')">Tutorial CSS dasar</a></li>
+                    <li><a href="javascript:void(0);" onclick="showTutorial('Tutorial PHP dasar: <h4>PHP adalah bahasa pemrograman yang digunakan untuk pengembangan web.</h4> <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman sisi server yang digunakan untuk membuat halaman web dinamis. PHP sering digunakan untuk membuat aplikasi web yang interaktif, seperti formulir kontak, login pengguna, atau sistem manajemen konten.</p> <p>PHP dapat berinteraksi dengan database seperti MySQL untuk menyimpan dan mengambil data, memungkinkan pengembang membuat situs web yang dapat mengubah kontennya berdasarkan data pengguna.</p>')">Tutorial PHP dasar</a></li>
+                    <li><a href="javascript:void(0);" onclick="showTutorial('Tutorial JQuery dasar: <h4>JQuery adalah pustaka JavaScript yang memudahkan manipulasi DOM.</h4> <p>JQuery adalah pustaka JavaScript yang menyederhanakan penulisan kode JavaScript. Dengan JQuery, kita dapat dengan mudah menangani manipulasi DOM, peristiwa, animasi, dan berkomunikasi dengan server menggunakan AJAX.</p> <p>JQuery membantu pengembang untuk bekerja dengan elemen HTML dengan lebih mudah, seperti memilih elemen dan membuat animasi atau menangani klik tombol dengan sedikit kode.</p> <p>Karena kemampuannya yang mengurangi kompleksitas, JQuery sangat populer di kalangan pengembang web.</p>')">Tutorial JQuery dasar</a></li>
+                </ul>
+            </div>
+            <div class="content" id="content">
+                <!-- Content will appear here when a sidebar link is clicked -->
+                <p>Silahkan pilih tutorial dari sidebar untuk melihat kontennya.</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <p>&copy; 2025 Latihan Coding. All rights reserved - Zaki Nabil Razzaq Lubis(36).</p>
+        </div>
+    </div>
+</body>
+</html>
